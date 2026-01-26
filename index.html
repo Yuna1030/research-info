@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Study Information & Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      max-width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+    .required {
+      color: #d00;
+    }
+    button {
+      background-color: #0069d9;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #0053aa;
+    }
+    small {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Research Study Information</h1>
+
+  <div class="card">
+    <h2>Study Title</h2>
+    <p><strong>Example:</strong> Understanding Online Learning Experiences</p>
+
+    <h3>Purpose of the Study</h3>
+    <p>
+      We are conducting this study to better understand how people experience online learning
+      platforms, including their motivations, challenges, and suggestions for improvement.
+    </p>
+
+    <h3>What Participation Involves</h3>
+    <ul>
+      <li>One online survey (about 10–15 minutes)</li>
+      <li>Optional follow-up interview (about 30–45 minutes)</li>
+    </ul>
+
+    <h3>Risks and Benefits</h3>
+    <p>
+      We do not anticipate significant risks beyond those of everyday online activities.
+      Your feedback may help improve future online learning tools.
+    </p>
+
+    <h3>Confidentiality</h3>
+    <p>
+      Your responses will be kept confidential. Data will be stored securely and reported only
+      in aggregate form, without identifying information.
+    </p>
+
+    <h3>Voluntary Participation</h3>
+    <p>
+      Participation is completely voluntary. You may skip any question or withdraw at any time
+      without penalty.
+    </p>
+
+    <h3>Contact Information</h3>
+    <p>
+      If you have questions about this study, please contact:<br>
+      <strong>Principal Investigator:</strong> Dr. Jane Doe<br>
+      <strong>Email:</strong> jane.doe@example.edu<br>
+      <strong>Institution:</strong> Example University
+    </p>
+
+    <p><strong>Please read this information carefully before deciding whether to participate.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Interest & Contact Form</h2>
+    <p>
+      If you are interested in participating or would like more information, please fill out the form below.
+    </p>
+
+    <!-- Replace YOUR_FORMSPREE_ENDPOINT_HERE with your actual Formspree endpoint URL -->
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_HERE" method="POST">
+      <label for="name">
+        Name <span class="required">*</span>
+      </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">
+        Email address <span class="required">*</span>
+      </label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="age">
+        Age (optional)
+      </label>
+      <input type="number" id="age" name="age" min="0">
+
+      <label for="availability">
+        Preferred days/times for participation (optional)
+      </label>
+      <textarea id="availability" name="availability"></textarea>
+
+      <label for="questions">
+        Questions or comments (optional)
+      </label>
+      <textarea id="questions" name="questions"></textarea>
+
+      <!-- Optional hidden field to help you identify which form this is -->
+      <input type="hidden" name="form-name" value="Research Study Interest Form">
+
+      <small>
+        By submitting this form, you indicate that you have read the information above and
+        consent to be contacted about this study.
+      </small>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <p style="font-size: 12px; color: #777;">
+    This page is for information only and does not replace any official consent documents
+    you may be asked to sign before participating.
+  </p>
+
+</body>
+</html>
